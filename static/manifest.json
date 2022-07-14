@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "template",
+  "description": "chrome extension template",
+  "version": "0.0.1",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "assets/icon/64.png"
+    },
+    "default_title": "template"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "identity"
+  ],
+  "icons": {
+    "64": "assets/icon/64.png"
+  }
+}
