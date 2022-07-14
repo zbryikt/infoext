@@ -1,1 +1,1 @@
-console.log \popup
+console.log '[chromext] popup script run'

@@ -6,6 +6,13 @@
   "background": {
     "service_worker": "js/background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "run_at": "document_idle",
+      "js": ["js/content.js"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
