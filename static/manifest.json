@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "template",
-  "description": "chrome extension template",
+  "name": "infoext",
+  "description": "chrome extension infoext",
   "version": "0.0.1",
   "background": {
     "service_worker": "js/background.js"
@@ -18,13 +18,20 @@
     "default_icon": {
       "64": "assets/icon/64.png"
     },
-    "default_title": "template"
+    "default_title": "infoext"
   },
   "permissions": [
+    "contextMenus",
+    "scripting",
     "activeTab",
     "storage",
     "identity"
   ],
+  "host_permissions": ["*://*/*"],
+  "web_accessible_resources": [{
+    "resources": ["dollm.js"],
+    "matches": ["<all_urls>"]
+  }],
   "icons": {
     "64": "assets/icon/64.png"
   }
